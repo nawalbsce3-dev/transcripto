@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: transcripto-backend
+    env: docker
+    rootDir: backend
+    plan: starter
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: WHISPER_MODEL
+        value: tiny
