@@ -86,7 +86,7 @@
               </svg>
               LinkedIn
             </a>
-            <a href="#" class="credit-link">
+            <a href="https://github.com/nawalbsce3-dev/transcripto" target="_blank" rel="noreferrer" class="credit-link">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M8 8h8"></path>
                 <path d="M8 12h8"></path>
