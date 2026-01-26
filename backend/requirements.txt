@@ -1,0 +1,20 @@
+# Transcripto Backend - Python Dependencies
+
+# Web Framework
+Flask==3.0.0
+flask-cors==4.0.0
+
+# OpenAI Whisper for transcription
+openai-whisper==20231117
+
+# Audio processing dependencies (installed with Whisper)
+# torch - PyTorch for ML operations
+# torchaudio - Audio processing
+# numpy - Numerical operations
+# ffmpeg-python - Audio file handling
+
+# File handling
+Werkzeug==3.0.1
+
+# Optional: For better performance
+# numba - JIT compilation for faster processing
