@@ -10,29 +10,14 @@
 
     <nav class="sidebar-nav" aria-label="Main navigation">
       <p class="sidebar-label">Menu</p>
-      <router-link to="/about" class="sidebar-link" active-class="is-active" @click="$emit('close')">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg>
-        Letters
-      </router-link>
+
       <router-link to="/" class="sidebar-link" exact-active-class="is-active" @click="$emit('close')">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg>
         Transcribe
       </router-link>
-      <router-link to="/features" class="sidebar-link" active-class="is-active" @click="$emit('close')">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg>
-        Features
-      </router-link>
       <router-link to="/analysis" class="sidebar-link" active-class="is-active" @click="$emit('close')">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16" /><path d="m7 15 3-4 3 2 5-7" /></svg>
         Analysis
-      </router-link>
-      <router-link to="/how-it-works" class="sidebar-link" active-class="is-active" @click="$emit('close')">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="m10 8 6 4-6 4z" /></svg>
-        How It Works
-      </router-link>
-      <router-link to="/about" class="sidebar-link" active-class="is-active" @click="$emit('close')">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 11v5m0-8h.01" /></svg>
-        About
       </router-link>
     </nav>
 
@@ -58,9 +43,6 @@
           <span class="history-item-date">{{ formatDate(item.createdAt) }}</span>
         </button>
       </div>
-      <p v-else class="history-empty">
-        {{ search ? 'No saved transcripts match your search.' : 'Completed transcripts you save in this browser will appear here.' }}
-      </p>
       <p v-if="storageError" class="history-storage-error" role="status">{{ storageError }}</p>
       <button class="new-transcription" type="button" @click="$emit('new-transcription')">
         <span aria-hidden="true">＋</span> New Transcribe
@@ -77,7 +59,7 @@
       </a>
       <router-link class="sidebar-utility" to="/about">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 11v5m0-8h.01" /></svg>
-        About &amp; privacy
+        About
       </router-link>
     </nav>
   </aside>

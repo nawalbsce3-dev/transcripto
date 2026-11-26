@@ -5,12 +5,10 @@
         <div class="panel-header">
           <div class="panel-title-group">
             <h2 class="panel-title">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.6 5.4L19 10l-5.4 1.6L12 17l-1.6-5.4L5 10l5.4-1.6L12 3Zm7 11 .8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14Z" /></svg>
               Input
             </h2>
             <p class="muted">Choose an audio file to transcribe.</p>
           </div>
-          <StatusPill :state-class="statusClass" :label="statusLabel" />
           <details ref="inputOptionsMenu" class="input-options-menu">
             <summary aria-label="Input options" title="Input options">
               <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1" /><circle cx="12" cy="12" r="1" /><circle cx="19" cy="12" r="1" /></svg>
@@ -203,7 +201,6 @@
           />
           <span v-if="transcribedText" class="estimated-speakers">Estimated speakers</span>
         </div>
-        <p v-if="historySelection && !audioUrl" class="history-audio-note">Audio files aren’t saved in browser history, so playback is unavailable for this transcript.</p>
 
         <div ref="transcriptScroller" class="output-card" :class="{ empty: !transcribedText }" :aria-busy="isProcessing" aria-live="polite">
           <div v-if="isProcessing" class="transcript-loading" aria-label="Transcription in progress">
@@ -229,17 +226,6 @@
             <p v-else class="output-text">{{ transcribedText }}</p>
           </div>
         </div>
-
-        <p v-if="transcribedText && displaySegments.length" class="speaker-disclaimer">
-          Speaker labels are estimates from pauses, not verified speaker identification.
-        </p>
-
-        <div class="polish-row">
-          <button class="polish-button" type="button" disabled title="Coming soon" aria-label="Polish transcript with AI — coming soon">
-            <span aria-hidden="true">✦</span> Polish with AI <span class="coming-soon">Coming soon</span>
-          </button>
-        </div>
-
         <audio
           v-if="audioUrl"
           ref="audioElement"
@@ -251,12 +237,6 @@
           @pause="isPlaying = false"
           @ended="isPlaying = false"
         ></audio>
-
-        <div v-if="status !== 'Error'" class="workspace-status" :class="statusClass">
-          <span class="workspace-status-dot" aria-hidden="true"></span>
-          <span>{{ statusLabel }}</span>
-          <span class="workspace-status-detail">{{ statusDescription }}</span>
-        </div>
       </div>
     </section>
 

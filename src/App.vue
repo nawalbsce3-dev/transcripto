@@ -45,28 +45,6 @@
             <component v-else :is="Component" :key="route.name" />
           </router-view>
         </main>
-
-        <footer class="site-footer">
-          <div class="footer-inner">
-            <div class="footer-brand-block">
-              <BrandLink />
-              <p>Clear words from the audio that matters.</p>
-            </div>
-            <nav class="footer-nav" aria-label="Footer navigation">
-              <router-link to="/features">Features</router-link>
-              <router-link to="/how-it-works">How it works</router-link>
-              <router-link to="/about">About</router-link>
-            </nav>
-            <div class="footer-note">
-              <span class="footer-note-dot" aria-hidden="true"></span>
-              <span>Uploads are removed after processing.</span>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <span>© 2026 Transcripto · Portfolio project</span>
-            <span>Built with Vue, Flask &amp; OpenAI Whisper</span>
-          </div>
-        </footer>
       </div>
     </div>
   </div>
