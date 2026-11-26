@@ -157,6 +157,15 @@ input:focus-visible,
   font-weight: 800;
   letter-spacing: -0.055em;
   text-decoration: none;
+  margin-top: 4px;
+  
+}
+
+.brand-logo {
+  display: block;
+  width: 177px;
+  height: auto;
+  object-fit: contain;
 }
 
 .brand-mark {
@@ -5887,7 +5896,7 @@ input:focus-visible,
 .sidebar-brand-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 45px;
   margin: 0 3px 24px;
   padding-bottom: 20px;
@@ -5895,6 +5904,7 @@ input:focus-visible,
 }
 
 .sidebar-brand-row .brand {
+  justify-content: center;
   color: #242236;
   font-size: 19px;
   font-weight: 750;

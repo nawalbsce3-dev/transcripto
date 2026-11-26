@@ -1,7 +1,6 @@
 <template>
   <router-link :to="to" class="brand" :aria-label="label">
-    <span class="brand-mark" aria-hidden="true"><span></span></span>
-    <span>Transcripto</span>
+    <img class="brand-logo" src="/Transcripto_Logo_Purple.png" alt="Transcripto" />
   </router-link>
 </template>
 
