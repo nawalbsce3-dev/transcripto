@@ -3,7 +3,7 @@
     <section class="info-section">
       <div class="section-header centered">
         <div class="eyebrow">About Transcripto</div>
-        <h2>Professional Audio-to-Text Platform</h2>
+        <h1>Professional Audio-to-Text Platform</h1>
       </div>
       <div class="info-grid">
         <div class="info-card">
@@ -18,7 +18,7 @@
             </svg>
           </div>
           <h3>What is Transcripto?</h3>
-          <p>Transcripto is a modern, AI-powered transcription platform that converts audio files into accurate, timestamped text transcriptions. Built with OpenAI's Whisper AI model, it delivers professional-grade results for podcasts, meetings, interviews, and more.</p>
+          <p>Transcripto is a focused audio-to-text utility that uses OpenAI Whisper to create timestamped transcript drafts for podcasts, meetings, interviews, and more. Results depend on audio quality, accents, and background noise.</p>
         </div>
         <div class="info-card">
           <div class="info-icon" aria-hidden="true">
@@ -29,7 +29,7 @@
             </svg>
           </div>
           <h3>Why Choose Transcripto?</h3>
-          <p>Get speaker-separated transcriptions with precise timestamps, support for multiple audio formats, and an intuitive interface. Perfect for content creators, researchers, journalists, and business professionals.</p>
+          <p>Upload common audio formats, review timestamped segments alongside playback, then copy or download the transcript. Speaker labels are estimated from pauses and are not true diarization.</p>
         </div>
       </div>
     </section>
@@ -99,7 +99,7 @@
         </div>
         <div class="credit-card">
           <h3>Developed For</h3>
-          <p class="credit-text">Designed for content creators, podcasters, researchers, journalists, and professionals who need fast, accurate audio transcription.</p>
+          <p class="credit-text">Designed for creators, podcasters, researchers, journalists, and professionals who need a clear audio-to-text first draft.</p>
           <ul class="use-cases">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -131,6 +131,9 @@
       <div class="tech-credits">
         <h4>Powered By</h4>
         <p>OpenAI Whisper AI • Vue.js 3 • Flask • FFmpeg • Python • Vite</p>
+      </div>
+      <div class="privacy-note">
+        <strong>Temporary processing:</strong> Audio files are temporarily stored on the server during processing and removed afterward. Transcripto does not currently provide accounts, permanent storage, or transcript history.
       </div>
     </section>
   </div>

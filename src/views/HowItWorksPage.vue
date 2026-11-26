@@ -3,7 +3,7 @@
     <section class="info-section">
       <div class="section-header centered">
         <div class="eyebrow">Simple Process</div>
-        <h2>How It Works</h2>
+        <h1>How It Works</h1>
       </div>
       <div class="steps-grid">
         <div class="step-card">
@@ -14,17 +14,17 @@
         <div class="step-card">
           <div class="step-number">2</div>
           <h3>AI Processing</h3>
-          <p>OpenAI Whisper AI analyzes your audio, detecting speech patterns, speakers, and generating accurate timestamps for each segment.</p>
+          <p>OpenAI Whisper transcribes the audio and creates timestamped segments. Processing time varies with file length and hardware.</p>
         </div>
         <div class="step-card">
           <div class="step-number">3</div>
           <h3>Get Results</h3>
-          <p>Receive a clean, timestamped transcript with speaker labels. Play audio alongside the transcript, click segments to jump to any point.</p>
+          <p>Review timestamped text alongside your audio. Speaker labels are basic estimates based on pauses, not verified identities.</p>
         </div>
         <div class="step-card">
           <div class="step-number">4</div>
           <h3>Export & Share</h3>
-          <p>Copy to clipboard or download as a text file. Ready for documentation, subtitles, analysis, or integration with your workflow.</p>
+          <p>Copy the transcript or download it as a TXT file. Other export formats are not currently available.</p>
         </div>
       </div>
     </section>
@@ -35,8 +35,12 @@
         <h2>Ready to Transcribe?</h2>
         <p class="section-desc">Upload your first audio file and experience AI-powered transcription</p>
       </div>
-      <div style="text-align: center; margin-top: 24px;">
-        <router-link to="/" class="cta">Start Converting Now</router-link>
+      <div class="cta-panel">
+        <div>
+          <h2>Start with your audio</h2>
+          <p>Processing time depends on file length and available hardware.</p>
+        </div>
+        <router-link to="/#workspace" class="cta">Start Converting Now <span aria-hidden="true">→</span></router-link>
       </div>
     </section>
   </div>

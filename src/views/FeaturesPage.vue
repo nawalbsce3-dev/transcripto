@@ -3,7 +3,7 @@
     <section class="features">
       <div class="section-header centered">
         <div class="eyebrow">Core Features</div>
-        <h2>Everything You Need</h2>
+        <h1>Everything You Need</h1>
       </div>
       <div class="features-grid">
         <div class="feature-card">
@@ -12,8 +12,8 @@
               <path d="M13 2L3 14h6l-2 8 10-12h-6l2-8z"></path>
             </svg>
           </div>
-          <h3>Lightning Fast</h3>
-          <p>Powered by OpenAI Whisper AI with optimized processing. Get accurate transcriptions in seconds, not minutes.</p>
+          <h3>AI-Assisted Transcription</h3>
+          <p>Whisper creates a useful first draft. Results can vary with recording quality, accents, background noise, and the selected model.</p>
         </div>
         <div class="feature-card">
           <div class="icon-badge">
@@ -24,7 +24,7 @@
             </svg>
           </div>
           <h3>Multi-Format Support</h3>
-          <p>Accepts MP3, WAV, M4A, FLAC, OGG, AAC, WMA, and OPUS. Perfect for podcasts, meetings, interviews, and calls.</p>
+          <p>Upload MP3, WAV, M4A, FLAC, OGG, AAC, WMA, or OPUS audio for podcasts, meetings, interviews, and more.</p>
         </div>
         <div class="feature-card">
           <div class="icon-badge">
@@ -40,8 +40,8 @@
               <path d="M14 17v3"></path>
             </svg>
           </div>
-          <h3>AI-Powered Accuracy</h3>
-          <p>State-of-the-art OpenAI Whisper model ensures high accuracy across multiple languages and accents.</p>
+          <h3>Multilingual Speech Support</h3>
+          <p>OpenAI Whisper supports speech transcription across languages. Clarity depends on the audio and speaking conditions.</p>
         </div>
         <div class="feature-card">
           <div class="icon-badge">
@@ -51,7 +51,7 @@
             </svg>
           </div>
           <h3>Timestamped Segments</h3>
-          <p>Every line includes precise timestamps. Click any segment to jump directly to that point in the audio.</p>
+          <p>Segments include timestamps. Click a line to jump to that point in the audio.</p>
         </div>
         <div class="feature-card">
           <div class="icon-badge">
@@ -61,8 +61,8 @@
               <path d="M5 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"></path>
             </svg>
           </div>
-          <h3>Speaker Detection</h3>
-          <p>Automatic speaker separation with pause-based heuristics. Clearly labeled speaker segments for easy reading.</p>
+          <h3>Estimated Speaker Labels</h3>
+          <p>Basic speaker labels are estimated from pauses in the audio. They are not verified speaker identification or diarization.</p>
         </div>
         <div class="feature-card">
           <div class="icon-badge">
@@ -83,7 +83,7 @@
             </svg>
           </div>
           <h3>Easy Export</h3>
-          <p>Copy to clipboard or download as plain text. Integration-ready for your documentation workflow.</p>
+          <p>Copy the transcript or download it as a TXT file for your notes and documentation.</p>
         </div>
         <div class="feature-card">
           <div class="icon-badge">
@@ -92,8 +92,8 @@
               <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
             </svg>
           </div>
-          <h3>Secure & Private</h3>
-          <p>Client-side validation, secure file handling, and automatic cleanup. Your audio data stays protected.</p>
+          <h3>Temporary File Handling</h3>
+          <p>Audio is temporarily stored on the server for processing and removed afterward. The app does not keep a transcript history.</p>
         </div>
       </div>
     </section>
@@ -102,7 +102,7 @@
       <div class="section-header">
         <div class="eyebrow">Audio Compatibility</div>
         <h2>Supported Formats</h2>
-        <p class="section-desc">Transcripto accepts all major audio formats with seamless conversion</p>
+        <p class="section-desc">Upload one of the supported audio formats. Each file can be up to 25 MB.</p>
       </div>
       <div class="formats-grid">
         <div class="format-badge">
@@ -171,10 +171,18 @@
         </div>
       </div>
       <div class="format-note">
-        <p>✓ Maximum file size: 25MB per upload</p>
-        <p>✓ Automatic format detection and validation</p>
-        <p>✓ High-quality audio processing with FFmpeg</p>
+        <p>Maximum file size: 25 MB</p>
+        <p>Formats are checked before transcription</p>
+        <p>Processing time depends on file length and hardware</p>
       </div>
+    </section>
+
+    <section class="cta-panel">
+      <div>
+        <h2>Ready to make a first draft?</h2>
+        <p>Upload an audio file and review a timestamped transcript.</p>
+      </div>
+      <router-link to="/#workspace" class="cta">Start transcribing <span aria-hidden="true">→</span></router-link>
     </section>
   </div>
 </template>
