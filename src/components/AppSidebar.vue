@@ -11,7 +11,7 @@
     <nav class="sidebar-nav" aria-label="Main navigation">
       <p class="sidebar-label">Menu</p>
 
-      <router-link to="/" class="sidebar-link" exact-active-class="is-active" @click="$emit('close')">
+      <router-link to="/transcribe" class="sidebar-link" active-class="is-active" @click="$emit('close')">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h5" /></svg>
         Transcribe
       </router-link>

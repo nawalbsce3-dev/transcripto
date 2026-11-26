@@ -40,7 +40,7 @@
           <h2>Start with your audio</h2>
           <p>Processing time depends on file length and available hardware.</p>
         </div>
-        <router-link to="/#workspace" class="cta">Start Converting Now <span aria-hidden="true">→</span></router-link>
+        <router-link to="/transcribe" class="cta">Start Converting Now <span aria-hidden="true">→</span></router-link>
       </div>
     </section>
   </div>

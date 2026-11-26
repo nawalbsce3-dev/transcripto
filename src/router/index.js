@@ -4,10 +4,17 @@ import AboutPage from '../views/AboutPage.vue'
 import FeaturesPage from '../views/FeaturesPage.vue'
 import HowItWorksPage from '../views/HowItWorksPage.vue'
 import AnalysisPage from '../views/AnalysisPage.vue'
+import LandingPage from '../views/LandingPage.vue'
 
 const routes = [
   {
     path: '/',
+    name: 'Landing',
+    component: LandingPage,
+    meta: { title: 'Audio to Text' }
+  },
+  {
+    path: '/transcribe',
     name: 'Home',
     component: HomePage,
     meta: { title: 'Transcribe' }

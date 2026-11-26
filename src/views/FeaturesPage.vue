@@ -182,7 +182,7 @@
         <h2>Ready to make a first draft?</h2>
         <p>Upload an audio file and review a timestamped transcript.</p>
       </div>
-      <router-link to="/#workspace" class="cta">Start transcribing <span aria-hidden="true">→</span></router-link>
+      <router-link to="/transcribe" class="cta">Start transcribing <span aria-hidden="true">→</span></router-link>
     </section>
   </div>
 </template>

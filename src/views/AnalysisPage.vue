@@ -242,7 +242,7 @@
       <span class="an-empty-icon" aria-hidden="true">∑</span>
       <h3>No saved transcript to analyze yet</h3>
       <p>Transcribe an audio file first. Completed transcripts are saved only in this browser.</p>
-      <router-link to="/" class="an-cta">Start transcribing</router-link>
+      <router-link to="/transcribe" class="an-cta">Start transcribing</router-link>
     </section>
   </div>
 </template>

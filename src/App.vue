@@ -1,5 +1,6 @@
 <template>
-  <div class="app-frame" @keydown.esc="drawerOpen = false">
+  <LandingPage v-if="route.name === 'Landing'" />
+  <div v-else class="app-frame" @keydown.esc="drawerOpen = false">
     <div class="app-shell">
       <AppSidebar
         :history="history"
@@ -56,6 +57,7 @@ import { useRoute, useRouter } from 'vue-router'
 import AppHeader from './components/AppHeader.vue'
 import AppSidebar from './components/AppSidebar.vue'
 import BrandLink from './components/BrandLink.vue'
+import LandingPage from './views/LandingPage.vue'
 
 const HISTORY_STORAGE_KEY = 'transcripto.transcription-history.v1'
 const route = useRoute()
@@ -136,7 +138,7 @@ const selectHistory = async (item) => {
   activeHistoryId.value = item.id
   currentTitle.value = item.title
   drawerOpen.value = false
-  if (route.name !== 'Home') await router.push('/')
+  if (route.name !== 'Home') await router.push('/transcribe')
 }
 
 const selectHistoryForAnalysis = (id) => {
@@ -152,6 +154,6 @@ const startNewTranscription = async () => {
   historySearch.value = ''
   drawerOpen.value = false
   homeInstanceKey.value += 1
-  if (route.name !== 'Home' || route.hash) await router.push('/')
+  if (route.name !== 'Home' || route.hash) await router.push('/transcribe')
 }
 </script>
